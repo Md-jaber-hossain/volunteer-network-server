@@ -99,7 +99,7 @@ async function run() {
         })
 
         // GET by email
-        app.get("/users/:email", (req, res) => {
+        app.get("/myevent/:email", (req, res) => {
             console.log(req.params);
             usersCollection
               .find({ email: req.params.email })
